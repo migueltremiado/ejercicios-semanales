@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rubik:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  min-height: 100vh;
+  background-image: url("../img/hamburguesa.png");
+  background-size: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+  color: rgb(3, 36, 80);
+  text-align: center;
+}
+
+form > fieldset > legend {
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+form > fieldset:nth-child(1) input {
+  margin-right: 0.5rem;
+}
+
+form > fieldset:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+form > fieldset:nth-child(2) label {
+  margin-bottom: 0.5rem;
+}
+
+form > fieldset:nth-child(2) input,
+form > fieldset:nth-child(2) textarea {
+  padding: 0.5rem;
+  outline: none;
+  margin-bottom: 1rem;
+  min-width: 400px;
+}
+
+fieldset {
+  margin-bottom: 1rem;
+  border: none;
+}
+
+fieldset fieldset legend {
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+label {
+  font-weight: 100;
+  font-style: italic;
+}
+
+input,
+textarea,
+select {
+  border: 1px solid rgb(3, 36, 80);
+}
+
+select {
+  padding: 0.5rem 1rem;
+  outline: none;
+  color: rgb(3, 36, 80);
+  font-weight: bold;
+}
+
+button {
+  background-color: rgb(3, 36, 80);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-weight: bold;
+}

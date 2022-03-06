@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+
+  position: relative;
+}
+
+.container p {
+  font-size: 1.5rem;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transition: transform 1s;
+}
+
+.top.left {
+  background-color: red;
+  top: 0;
+  left: 0;
+  transform-origin: left top;
+}
+
+.top.right {
+  background-color: yellow;
+  top: 0;
+  right: 0;
+  transform-origin: right top;
+}
+
+.bottom.left {
+  background-color: blue;
+  bottom: 0;
+  left: 0;
+  transform-origin: left bottom;
+}
+
+.bottom.right {
+  background-color: green;
+  bottom: 0;
+  right: 0;
+  transform-origin: right bottom;
+}
+
+.container:hover .top.left,
+.container:hover .bottom.right {
+  transform: rotate(90deg);
+}
+
+.container:hover .top.right,
+.container:hover .bottom.left {
+  transform: rotate(-90deg);
+}

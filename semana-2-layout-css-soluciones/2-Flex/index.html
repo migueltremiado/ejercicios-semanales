@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Flex</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personaliza tu hamburguesa</legend>
+
+        <fieldset>
+          <legend>Ingredientes</legend>
+
+          <label for="cheese">Queso:</label>
+          <input id="cheese" name="cheese" type="checkbox" />
+
+          <label for="pepper">Pimiento:</label>
+          <input id="pepper" name="pepper" type="checkbox" />
+
+          <label for="onion">Cebolla:</label>
+          <input id="onion" name="onion" type="checkbox" />
+
+          <label for="ham">Jamón:</label>
+          <input id="ham" name="ham" type="checkbox" />
+
+          <label for="egg">Huevo:</label>
+          <input id="egg" name="egg" type="checkbox" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Tamaño</legend>
+
+          <label for="small">Pequeña</label>
+          <input id="small" name="size" type="radio" value="small" />
+
+          <label for="medium">Mediana</label>
+          <input id="medium" name="size" type="radio" value="medium" />
+
+          <label for="big">Grande</label>
+          <input id="big" name="size" type="radio" value="big" />
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos de entrega</legend>
+
+        <label for="name">Nombre:</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="address">Dirección:</label>
+        <input id="address" name="address" type="text" required />
+
+        <label for="tel">Teléfono:</label>
+        <input id="tel" name="tel" type="tel" required />
+
+        <label for="notes">Instrucciones especiales:</label>
+        <textarea id="notes" name="notes"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Método de pago</legend>
+
+        <select name="payment" required>
+          <option value="">Escoge el método de pago</option>
+          <option value="credit_card">Tarjeta de crédito</option>
+          <option value="bank_transfer">Transferencia bancaria</option>
+          <option value="cash">Efectivo</option>
+        </select>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>

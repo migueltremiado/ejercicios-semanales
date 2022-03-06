@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio tres: formularios</title>
+  </head>
+  <body>
+    <main>
+      <form action="#" method="get">
+        <fieldset>
+          <legend>Datos personales</legend>
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" required autofocus />
+
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="url">URL</label>
+          <input
+            id="url"
+            name="url"
+            type="url"
+            placeholder="Escribe la URL de tu página web"
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Fechas y horas</legend>
+
+          <label for="date">Fecha</label>
+          <input id="date" name="date" type="date" />
+
+          <label for="time">Tiempo</label>
+          <input id="time" name="time" type="time" />
+
+          <label for="date-time">Fecha y hora</label>
+          <input id="date-time" name="date-time" type="datetime-local" />
+
+          <label for="month">Mes</label>
+          <input id="month" name="month" type="month" />
+
+          <label for="week">Semana</label>
+          <input id="week" name="week" type="week" />
+        </fieldset>
+
+        <fieldset>
+          <legend>Otros</legend>
+
+          <label for="number">Número</label>
+          <input id="number" name="number" type="number" min="-10" max="10" />
+
+          <label for="tel">Teléfono</label>
+          <input id="tel" name="tel" type="tel" value="639 99 99 99" readonly />
+
+          <label for="search">Término de búsqueda</label>
+          <input id="search" name="search" type="search" disabled />
+
+          <label for="fav-color">Color favorito</label>
+          <input id="fav-color" name="fav-color" type="color" />
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+  </body>
+</html>
